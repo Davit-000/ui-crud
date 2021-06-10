@@ -1,0 +1,22 @@
+{
+  "name": "ui-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^15.12.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "commander": "^7.2.0",
+    "inquirer": "^8.1.0"
+  }
+}
