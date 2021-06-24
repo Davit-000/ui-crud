@@ -1,22 +1,39 @@
 {
-  "name": "ui-crud",
+  "name": "@medici_di/ui-crud",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "crud generator.",
+  "main": "dist/index.js",
+  "preferGlobal": true,
+  "bin": "./dist/index.js",
   "scripts": {
     "start": "tsc && node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "node -r ts-node/register src/index.ts"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/lodash": "^4.14.170",
     "@types/node": "^15.12.2",
-    "tslint": "^6.1.3",
+    "@types/pluralize": "^0.0.29",
+    "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
   },
   "dependencies": {
     "commander": "^7.2.0",
-    "inquirer": "^8.1.0"
+    "inquirer": "^8.1.0",
+    "lodash": "^4.17.21",
+    "pluralize": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/medici_di/ui-crud"
+  },
+  "author": {
+    "email": "d.hovhannisyan@biopicmedical.com",
+    "name": "David Hovhannisyan"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/medici_di/ui-crud/-/issues"
   }
 }
